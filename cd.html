@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        body{ background: url("bg.jpg") no-repeat;}
+        .box{ position: absolute;
+              left: 40%;
+              top: 180px;
+            -webkit-transform-style:preserve-3d ;
+            -webkit-transition: 2s all ease;
+        }
+        .cd{ width: 194px; height: 194px;
+            border-radius: 50%;
+            position:absolute;
+             top: 0;
+            left: 0;
+            background: url("cd.png") no-repeat;
+            -webkit-transform: rotate(0deg);
+            -webkit-transition: 2s all ease;}
+        .hz{ width: 200px; height: 200px; background: url("img_01.jpg") no-repeat;
+            position:absolute;
+            top: 70px;
+            left: 0;
+            -webkit-transition: 2s all ease;}
+        .box:hover .cd{ -webkit-transform: rotate(360deg);
+        top:10px;}
+        .box:hover .hz{top:10px;}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="cd"></div>
+    <div class="hz"></div>
+
+</div>
+</body>
+</html>
